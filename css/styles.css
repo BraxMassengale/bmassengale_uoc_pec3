@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+.container {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 12% 4% 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+}
+
+header h1 a:link, header h1 a:visited {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#titleLogo h1 {
+    margin: 0;
+}
+
+header ul {
+    padding: 0px;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+header small {
+    text-transform: uppercase;
+}
+
+header li a {
+    color: rgb(0, 0, 0);
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+header h1 a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+header small {
+    margin: 0;
+    padding: 0;
+}
+
+.current-page {
+    color: rgb(189, 55, 0);
+}
+
+/* MAIN */
+
+main {
+    margin-top: 12%;
+}
+
+main a {
+    color: rgb(189, 55, 0);
+}
+
+main a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* HERO */
+
+.hero {
+    color: white;
+    background-image: url("/assets/images/bg-hero-home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    padding: 10%;
+}
+
+.hero h2 {
+    font-size: 4rem;
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 5%;
+}
+
+.info h3 {
+    font-size: 2rem;
+}
+
+/* NEWS */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 5%;
+}
+
+.news a {
+    text-decoration: none;
+    color: rgb(189, 55, 0);
+}
+
+.news a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.shelf {
+    display: flex;
+    flex-direction: row;
+}
+
+.shelf article {
+    max-width: 300px;
+    margin: 1rem;
+}
+
+.shelf img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.news .link-underline {
+    color: rgb(189, 55, 0);
+    text-decoration: underline 1px dotted;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    background-color: rgb(242, 232, 228);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.newsletter button {
+    margin: 1rem 0 1rem 0;
+    background-color: rgb(189, 55, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    max-width: 200px;
+}
+
+.newsletter button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.newsletter-input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.newsletter-input-group label {
+    margin: 1rem 0 1rem 0;
+}
+
+.newsletter-input-group input {
+    width: 80%;
+    padding: 18px 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* CARD */
+#sintomas-cards-display {
+    width: 80%;
+    padding: 0 10%;
+}
+
+.title-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 60%;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 2%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card img {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.card:nth-child(odd) {
+    float: right;
+}
+
+.card-text {
+    padding: 0 2%;
+    font-size: 0.7rem;
+}
+
+/* VIDEO DISPLAY */
+
+#video-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+#video-display iframe {
+    width: 400px;
+    height: 225px;
+    border: none;
+}
+
+#top-video-div, #bottom-video-div {
+    display: flex;
+}
+
+#video-display figcaption {
+    font-size: 0.7rem;
+    padding: 2%;
+}
+
+#video-display figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+/* GLASGOW EVENT */
+#glasgow-event {
+    display: flex;
+    padding: 0 15%;
+}
+
+#glasgow-event #right-div, #glasgow-event #left-div {
+    width: 50%;
+}
+
+#glasgow-event figure {
+    background: #eee;
+    padding: 15px;
+    border-left: 3px solid #ff1616;
+    margin: 0 0 1rem;
+}
+#glasgow-event figure figcaption {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#glasgow-event blockquote {
+    margin: 0;
+}
+
+
+    /* FOOTER */
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+footer ul {
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer li {
+    margin-right: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(189, 55, 0);
+}
+
+#social-media a:hover {
+    opacity: 0.7;
+}
+
+#UOC-disclaimer {
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+}
+
+@media only screen and (max-width: 992px) {
+
+    header {
+        padding: 2%;
+        height: 20%;
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shelf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        align-items: center;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer #social-media ul {
+        flex-direction: row;
+    }
+
+    main {
+        padding-top: 40%;
+    }
+
+    #sintomas-cards-display {
+        width: 90%;
+        padding: 0 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #top-video-div, #bottom-video-div {
+        flex-direction: column;
+    }
+
+    #video-display iframe {
+        width: 300px;
+        height: 168.75px;
+    }
+
+    #glasgow-event {
+        flex-direction: column;
+        padding: 0 2%;
+        align-items: center;
+    }
+
+    #glasgow-event #right-div, #glasgow-event #left-div {
+        width: 100%;
+    }
+
+}
